@@ -1,0 +1,49 @@
+Model Architecture planning
+
+Customers
+  Profile
+    - title
+    - first_name
+    - last_name
+    - street_address
+    - area
+    - town
+    - contact_number
+    - email_address
+    - time_added
+    - updated
+
+  Transaction
+    - customer (foreign key to profile)
+    - stock_items (foreign key to products.item)
+    - type
+    - status (pending or complete)
+    - total_cost
+    - placed_at
+    - completed_at
+
+  StockItem
+    - item
+    - transaction
+    - quantity
+
+
+
+
+Products (rename app to Stock)
+  Item
+    - name
+    - description
+    - quantity
+    - price
+    - category
+    - is_service_component
+    - time_added
+    - updated
+    - slug
+
+  Image
+    -
+
+  Category
+    -

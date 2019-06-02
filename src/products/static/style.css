@@ -1,0 +1,175 @@
+/* @import 'base';
+
+html{
+  box-sizing: border-box;
+}
+
+*, *::before, *::after{
+  box-sizing: inherit;
+} */
+
+body{
+  font-family: Helvetica, arial, verdana, 'Courier New', sans-serif;
+  margin: 0px;
+}
+
+.grid{
+  display: grid;
+  /* background-image: url(images/landingPage.png);
+  background-size: cover; */
+}
+
+.nav-header{
+  display: grid;
+  grid-template-columns: 5fr 5fr;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-header .brand img{
+  width: 15vw;
+  padding: 1em;
+}
+
+.content{
+  display: grid;
+}
+
+.jumbotron{
+  background-image: url(products/images/Grandma&Boy.png);
+  background-size: contain;
+  text-align: center;
+  height: 50vh;
+}
+
+.service-what{
+  display: grid;
+  grid-template-columns: 5fr 5fr;
+  margin: 0.2em;
+  padding: 2em;
+}
+
+.service-card img{
+  width: 10em;
+  padding: 0;
+}
+
+
+ .service-what .service-card{
+  background-color: rgba(1, 28, 5, 0.4);
+  letter-spacing: 0.15em;
+  text-align: center;
+  border: 1px solid rgba(0, 0, 0, 0.75);
+  margin: 1.4em;
+  padding: 0;
+}
+
+.service-wrap h3{
+  font-size: 1.3em;
+}
+
+.service-wrap p{
+  font-size: 0.8em;
+}
+
+.container small{
+  text-transform: lowercase;
+  color: grey;
+}
+
+.small-print{
+    display:grid;
+    grid-template-columns: 9fr 1fr;
+    background-color: black;
+    /* background-color: #1e90ff; */
+    color: white;
+    z-index:1;
+    padding: 10px;
+}
+
+.small-print .social-media{
+  list-style: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: 80px;
+  height: 80px;
+  padding: 6px;
+}
+
+@media (min-width: 700px)
+{
+  .jumbotron{
+    width: 100vw;
+  }
+
+  .service-motivation{
+    width: 100vw;
+    background-color: black;
+    height: auto;
+  }
+
+  .right{
+    height: auto;
+    float: none;
+    shape-outside: polygon(0 25%, 100% 40%, 100% 95.7%, 0 95.7%);
+    clip-path: polygon(0 25%, 100% 40%, 100% 95.7%, 0 95.7%);
+  }
+
+  .service-motivation h2{
+    color: white;
+    font-size: 1.850em;
+    letter-spacing: 0.25em;
+  }
+
+  .service-motivation p{
+    color: white;
+    font-size: 0.850em;
+    letter-spacing: 0.25em;
+    line-height: 1.65;
+    position: relative;
+    margin-top: 0.5em;
+    padding: 0.5em 0.9em;
+    top: 0;
+    text-align: center;
+  }
+
+  .service-types{
+    display: grid;
+    grid-template-columns: 10fr;
+    width: auto;
+  }
+
+  .service-types h3{
+    padding: 0.4em;
+    text-align: center;
+    font-size: 1.750em;
+    letter-spacing: 0.25em;
+  }
+
+  .service-types p{
+    text-align: center;
+    padding-top: 1.0em;
+    font-size: 1.4em;
+    font-weight: 500;
+    letter-spacing: 0.05em;
+  }
+
+  .service-types a{
+    font-size: 0.85em;
+    font-weight: 400;
+    letter-spacing: 0.05em;
+  }
+
+  .service-contentc, .service-techs{
+    padding-left: 0;
+    display: grid;
+  }
+
+  .service-contentc{
+    grid-row: 3;
+  }
+
+  .service-techs{
+    grid-row: 7;
+  }
+}

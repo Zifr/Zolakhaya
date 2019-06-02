@@ -1,0 +1,50 @@
+{% extends "base.html" %}
+{% load static %}
+{% block head_title %}Home || {{ block.super }}{% endblock head_title %}
+{% block content %}
+
+
+<main class = "content">
+
+  <!-- <div class ="jumbotron">
+    <h1>{{ zk_tagline }}</h1>
+  </div> -->
+
+  <div class = "service-what">
+
+    <div class = "service-card">
+      <img src = "{% static 'products/images/eggOutlineZK.png' %}"/>
+      <h3>Eggs</h3>
+      <div class = "service-wrap">
+        <p>Lorem ipsum....</p>
+      </div>
+    </div>
+
+    <div class = "service-card">
+      <img src = "{% static 'products/images/chickenOutlineZK.png' %}"/>
+      <h3>Poultry</h3>
+      <div class = "service-wrap">
+        <p>Lorem ipsum....</p>
+      </div>
+    </div>
+
+    <div class = "service-card">
+      <img src = "{% static 'products/images/vegBasketOutlineZK.png' %}"/>
+      <h3>Produce</h3>
+      <div class = "service-wrap">
+        <p>Lorem ipsum....</p>
+      </div>
+    </div>
+
+    <div class = "service-card">
+      <img src = "{% static 'products/images/ZKRentalsIcon.png' %}"/>
+      <h3>Rentals</h3>
+      <div class = "service-wrap">
+        <p>Lorem ipsum....</p>
+      </div>
+    </div>
+
+  </div>
+
+</main>
+{% endblock content %}
